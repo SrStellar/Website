@@ -1,0 +1,19 @@
+{
+    "name": "DevsCloud", 
+    "website": {
+    "port": 8182,
+    "secret": "KJIHUGYFTryuioJKNHBGYTFRTYuiojnhbgvfrdetYUIOUYTR5456",
+    "domain": "www.devscloud.tk"
+    },
+    "support": "https://discord.gg/tUyu65xcUh",
+
+    "hosting": {
+        "client_domain": "https://dash.devscloud.tk",
+        "panel_domain": "https://painel.devscloud.tk"
+    },
+
+    "status": {
+        "enabled": true,
+        "link": "https://wl.hetrixtools.com/r/b48e999f3ecedbee412b9f1c02286d32/"
+    }
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> <%= config.name %> | Início</title>
+  <meta content="Oferecendo servidores de qualidade para nossos clientes." name="description">
+
+  <meta content="hospedagem, host, free, paid, discord, ram, storage" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <span><%= config.name %></span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Início </a></li>
+          <li><a class="nav-link scrollto" href="/sobre">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="/servicos">Services</a></li>
+          <% if (config.status.enabled==true) { %><li><a class="nav-link scrollto" href="/status">Node Status</a></li><% } %>          <li class="dropdown"><a href="#"><span>Info</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              </li>
+              <li><a href="/termos">Termos</a></li>
+              <li><a href="/privacy">Privacidade</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="/dash" target="_blank">Dahsboard</a></li>
+          <li><a class="getstarted2 scrollto" href="/painel" target="_blank">Painel</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up"><%= config.name %><br>Sua Hospedagem Dev.</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Resgate seu servidor grátis agora.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#pricing" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Começar</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <center>
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="content">
+                <h3>Quem somos nós?</h3>
+                <h2><%= config.name %></h2>
+                <p>
+                  Nós somos a <%= config.name %>, uma empresa de hospedagem nova no mercado, oferecemos servidores gratuitos e pagos de qualidade, sempre pensando em você!
+                </p>
+              <b><li><a href="/sobre">Veja mais</a></li></b>
+                <div class="text-center text-lg-start">
+                </div>
+              </div>
+            </div>
+          </center>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clientes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Nodes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-headset" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="127" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Horas de Suporte</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Staffs</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Recursos</h2>
+          <p>Oque nossos nodes possuem?!</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="../assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>128GB de RAM</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>16 Cores</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>8 Threads</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>1TB SSD</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Serviçoes</h2>
+          <p>Oque nos oferecemos</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>NodeJS</h3>
+              <p>Oferecemos servidores de NodeJS para hospedagem de bots de discord.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Minecraft ( Em Breve )</h3>
+              <p>Em um futuro breve ofereceremos hospedagens de minecraft java e minecraft bedrock ( Celular ).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Mais</h3>
+              <p>Usando o catactyl você pode criar varios tipos de servidores.</p>
+            </div>
+          </div>  
+
+        <center><b><li><a href="/servicos">Veja Mais.</a></li></b></center>
+
+
+        <br>
+        <br>
+        <br>
+
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Preços</h2>
+          <p>Veja nossos preços!</p>
+        </header>
+
+        <div class="row gy-4" data-aos="fade-left">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h3 style="color: #07d5c0;">Plano Gratis</h3>
+              <div class="price"><sup>R$</sup>0<span> / m</span></div>
+              <img src="../assets/img/grass.png" class="img-fluid" alt="">
+              <ul>
+                <li>630MB de RAM</li>
+                <li>5GB de SSD</li>
+                <li>30% de CPU</li>
+                <li>Hospedagem Grátis</li>
+                <li>Suporte 24/5</li>
+                <li>Gerar coins AFK</li>
+                <li>Criar servidores usando coins</li>
+                <li>Comprar recursos usando coins</li>
+              </ul>
+              <a href="/dash" class="btn-buy">Resgate Agora.</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <span class="featured">Destaque</span>
+              <h3 style="color: #65c600;">Plano Ouro</h3>
+              <div class="price"><sup>R$</sup>5<span> / m</span></div>
+              <img src="../assets/img/iron-ore.png" class="img-fluid" alt="">
+              <ul>
+                <li>1GB de RAM</li>
+                <li>6GB de SSD</li>
+                <li>60% de CPU</li>
+                <li>250 Coins</li>
+                <li>Suporte 24/7/365</li>
+              </ul>
+              <a href="/discord" class="btn-buy">Comprar</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box">
+              <h3 style="color: #ff901c;">Plano Diamante</h3>
+              <div class="price"><sup>R$</sup>8<span> / m</span></div>
+              <img src="../assets/img/diamond.png" class="img-fluid" alt="">
+              <ul>
+                <li>3GB de RAM</li>
+                <li>8GB de SSD</li>
+                <li>120% de CPU</li>
+                <li>500 Coins</li>
+                <li>Suporte 24/7/365</li>
+              </ul>
+              <a href="/discord" class="btn-buy">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Perguntas Frequentes</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Como eu pego um plano grátis?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    <p>1. Abra https://dash.devscloud.tk/ no seu navegador</p>
+
+                    <p>2. Entre em sua conta via Login Discord</p>
+
+                    <p>3. Clique em Criar Servidor</p>
+
+                    <p>4. Em RAM coloque: 630, em SSD: 1024, em CPU: 20, em Localização: Selecione algum, e em Tipo: NodeJS</p>
+
+                    <p>5. Clique em criar servidor.</p>
+
+                    <p>6. Pronto! Agora siga o exemplo a seguir para entrar no painel de controle!.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Como acesso o Painel de Controle?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    <p>1. Vá para a Dashboard em uma aba.</p>
+                    <p>2. Abra https://painel.devscloud.tk/ em outra aba.</p>
+                    <p>3. Na Dashboard, clique em Perfil, e copie seu nome de usuário ou email.</p>
+                    <p>4. Cole na aba do painel.</p>
+                    <p>5. Na Dashboard, clique em Resetar Senha, copie.</p>
+                    <p>6. Cole a senha no painel.</p>
+                    <p>7. Pronto, agora você esta logado no Painel.</p>
+                  </div>
+                </div>
+              </div>
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    How do I get a custom domain?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    <p>1. Vá para https://freenom.com/ e registre uma conta.</p>
+                    <p>2. Registre um dominio gratis ( com o final em: .tk, .gq, .ml, .ga or .cf ) ou compre algum outro</p>
+                    <p>3. Vá para https://cloudflare.com/ e registre uma conta</p>
+                    <p>4. Adicione o seu dominio na cloudflare</p>
+                    <p>5. Altere os nameservers do seu domínio para os novos (encontrados no site de gerenciamento de domínios do freenom ou onde quer que você tenha o seu)</p>
+                    <p>6. Espere até que seu dominio esteja disponível</p>
+                    <p>7. Vá para a area de DNS, e crie um registro SRV com os seguintes dados:</p>
+                    <p>- Nome: jogar ( ou algo de sua preferencia )</p>
+                    <p>- Protocolo: TCP</p>
+                    <p>- Serviço: _minecraft</p>
+                    <p>- Prioridade: 0</p>
+                    <p>- Weight: 0</p>
+                    <p>- Porta: Porta do seu servidor</p>
+                    <p>- Target: IP ou dominio do seu servidor ( exemplos: 54.176.91.187 ou us-01.devscloud.tk )</p>
+                    <p>- TTL: Auto</p>
+                    <p>8. Você deve então consiguir se conectar usando jogar.seudominio.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Como resgatar recursos?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Para reivindicar quaisquer recursos, abra um ticket no servidor do Discord e peça ajuda a um administrador ou superior.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="/" class="logo d-flex align-items-center">
+              <span><%= config.name %></span>
+            </a>
+            <p>Somos um serviço de hospedagem que oferece planos de hospedagem grátis e pagos para nossos usuários. Nós nos preocupamos com nossos usuários, então temos nodes protegidos contra DDOS para que os nodes não fiquem offlines. Usamos o Pterdactyl como nosso painel de hospedagem, pois é um painel fácil de entender para os usuários usarem.</p>
+            <div class="social-links mt-3">
+              <a href="/server" target="_blank" class="twitter"><i class="bi bi-discord"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Links Uteis</h4>
+            <ul>
+              <li> <a href="/">Início</a></li>
+              <li> <a href="/sobre">Sobre Nós</a></li>
+              <li> <a href="/servicos">Services</a></li>
+              <li> <a href="/termos">Termos de Serviço</a></li>
+              <li> <a href="/privacidade">Politica de Privacidade</a></li>
+              <% if (config.status.enabled==true) { %><li> <a href="/status">Node Status</a></li><% } %>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              <strong><a href="/support">Suporte</a></strong><br>
+              <strong>Email:</strong> suporte@devscloud.tk
+              <br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span><%= config.name %></span></strong>. Todos os Direitos Reservados | <span>Website feito com ❤ por SrStellar ON#9695</span>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
